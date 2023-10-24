@@ -4,6 +4,7 @@
     <img align=center alt="html" width=70 height=70 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg">
     <img align=center alt="html" width=70 height=70 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg">  
     <h5>Documentação própria para fins estudantil, utilizando conceitos, sintaxes e exemplos em Banco de Dados Relacionais(SQL)</h5>
+    <p align="center"><img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/></p>
   </div>
   <div class="OqE">
     <h2>◾ O que é SQL?</h2>
@@ -18,7 +19,7 @@
      <img alt="rdbms" width=350 height=250 src="https://3.bp.blogspot.com/--vWgzq6KD7U/WgNzgvTG7lI/AAAAAAAAANc/4BDJojntaaQT_5q-do0hF7bxaYqoUdzywCPcBGAYYCw/s1600/rdbms_example%2B%25281%2529.jpg" />
     </p>
   </div>
- <div align="center "class="linha">__________________________________________________________________________________________________________</div>
+ <div align="center" class="linha">__________________________________________________________________________________________________________</div>
   <div class="Comandos">
     <div class="select">
      <h3>SELECT</h3>
@@ -34,7 +35,7 @@
 SELECT TOP 3 * FROM Customers;</p>
   </div>   
   </div>
-  <div align="center "class="linha">__________________________________________________________________________________________________________</div>
+  <div align="center"class="linha">__________________________________________________________________________________________________________</div>
   <div class="where">
    <h3>WHERE</h3>
      <p>▪️ Utilizado para filtrar um dado do BdD. "AND" utilizado com o where, vai adicionar mais uma condição.<br> ▪️Sintaxe:<br>
@@ -55,9 +56,11 @@ SELECT TOP 3 * FROM Customers;</p>
      <p>▪️Usado com where para procurar determinada palavra na tabela usado com %(Varios caracteres)  ou _(um caract).<br> ▪️Sintaxe:<br>
   SELECT * FROM Customers<br>
  WHERE City LIKE 's%';
+       
   <h4>IN</h4>
      <p>▪️Parecido com o OR, mas nesse caso vc requer as condições da amostra de tabela. <br> ▪️Sintaxe:<br>
  SELECT * FROM Customers<br>
  WHERE City IN ('Paris','London');
   </div>
+  <div align="center"class="linha">__________________________________________________________________________________________________________</div>
 </div>
