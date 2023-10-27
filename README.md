@@ -63,4 +63,54 @@ SELECT TOP 3 * FROM Customers;</p>
  WHERE City IN ('Paris','London');
   </div>
   <div align="center"class="linha">__________________________________________________________________________________________________________</div>
+  <div class="update">
+    <h3>UPDATE</h3>
+     <p>▪️ Atualiza dados em um BdD;<br> ▪️Sintaxe:<br>
+ UPDATE table_name<br>
+ SET column1 = value1, column2 = value2, ...<br>
+ WHERE condition;
+ <h4>INSERT INTO</h4>
+     <p>▪️Insere novos dados em um BdD; <br> ▪️Sintaxe:<br>
+ INSERT INTO table_name (column1, column2, column3, ...)<br>
+ VALUES (value1, value2, value3, ...);
+  <h4>ORDER By</h4>
+    <p>Usado para ordernar dados do BdD,  ASC: Crescente, DESC: Decrescente;<br>▪️Sintaxe:<br>
+    SELECT column1, column2, ...
+    FROM table_name
+    ORDER BY column1, column2, ... ASC|DESC;</p>
+    <h4>MIN. & MAX.</h4>
+    <p>Quando você atribue o max. e o min. do dados selecionados para preços.<br>▪️Sintaxe:<br>
+    SELECT MIN/MAX(column_name)<br>
+    FROM table_name<br>
+    WHERE condition; </p>
+    <h4>COUNT</h4>
+    <p>Retorna quantos dados existentes no BdD requerido. AVG ele retornará o valor médio de uma tabela.<br>
+▪️Sintaxe:<br>
+ SELECT COUNT(column_name)
+ FROM table_name<br>
+ WHERE condition;</p>
+    <h4>SUM</h4>
+    <p>Retorna o total de sumário de númericos da coluna;<br>
+ ▪️Sintaxe:<br>
+ SELECT SUM(column_name)<br>
+ FROM table_name<br>
+ WHERE condition;</p>
+    <h4>AVG</h4>
+    <p>Retorna o valor médio da tabela;<br>
+ ▪️Sintaxe:<br>
+ SELECT AVG(Price)<br>
+ FROM Products;</p>
+    <h4>BETWEEN</h4>
+    <p>Uma condição que pede valores dentro de um intervalo, podendo ser txt, números e afins;<br>
+ ▪️Sintaxe:<br>
+ SELECT column_name(s)<br>
+ FROM table_name<br>
+ WHERE column_name BETWEEN value1 AND value2;</p>
+    <h4>ALIASES</h4>
+    <p>Usado para dar um nome temporário a uma tabela;<br>
+ ▪️Sintaxe:<br>
+ SELECT CustomerID AS ID<br>
+ FROM Customers;</p>
+  </div>
 </div>
+ 
