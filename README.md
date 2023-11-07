@@ -112,5 +112,160 @@ SELECT TOP 3 * FROM Customers;</p>
  SELECT CustomerID AS ID<br>
  FROM Customers;</p>
   </div>
+  <div align="center"class="linha">__________________________________________________________________________________________________________</div>
+  <div class='JOINS'>
+    <h3>JOINS</h3>
+    <p> Usado para combinar linhas de duas ou mais tabelas;</p>
+    <p align="center">
+     <img alt="rdbms" width=370 height=270 src="https://learnsql.com/blog/learn-and-practice-sql-joins/2.png" />
+    </p>
+    <h4>INNER JOIN</h4>
+    <p> Seleciona arquivos em ambas tabelas selecionadas;<br>
+  ▪️Sintaxe:<br>
+   SELECT column_name(s)<br>
+   FROM table1<br>
+   INNER JOIN table2<br>
+   ON table1.column_name = table2.column_name;</p>
+    <h4>LEFT JOIN</h4>
+    <p> Junção de 2 tabelas interessado de ajuntar dados das 2 tabelas.<br>
+    ▪️Sintaxe:<br>
+     SELECT column_name(s)<br>
+     FROM table1<br>
+     LEFT JOIN table2<br>
+     ON table1.column_name = table2.column_name;</p>
+   <h4>RIGHT JOIN</h4>
+    <p>Vice-versa do left join, seleciona pelo lado direito(2) da ocasião;<br>
+    ▪️Sintaxe:<br>
+     SELECT column_name(s)<br>
+     FROM table1<br>
+     RIGHT JOIN table2<br>
+     ON table1.column_name = table2.column_name;</p>
+    <h4>FULL JOIN</h4>
+    <p>Irá selecionar os dois lados(1&2), retornando o msm atributo requerido;<br>
+▪️Sintaxe:<br>
+ SELECT column_name(s)<br>
+ FROM table1<br>
+ FULL OUTER JOIN table2<br>
+ ON table1.column_name = table2.column_name<br>
+ WHERE condition; </p>
+  </div>
+  <div align="center"class="linha">__________________________________________________________________________________________________________</div>
+  <div class='UNION'>
+    <h3>UNION</h3>
+    <p>Um operador que combina conjuntos do Select, esse operador seleciona apenas valores distintos por padrão. Para permitir valores duplicados, use "UNION ALL";<br>
+▪️ Sintaxe:<br>
+ SELECT column_name(s) FROM table1<br>
+ UNION<br>
+ SELECT column_name(s) FROM table2;
+</p>
+    <h4>GROUP BY</h4>
+    <p>ele agrupa dados em linhas;<br>
+▪️ Sintaxe: <br>
+ SELECT column_name(s)<br>
+ FROM table_name<br>
+ WHERE condition<br>
+ GROUP BY column_name(s)<br>
+ ORDER BY column_name(s);</p>
+    <h4>SELECT INTO</h4>
+    <p> seleciona dados de uma tabela para copiar, usando o IN para alocar em outro banco;<br>
+▪️ Sintaxe: <br>
+ SELECT *<br>
+ INTO newtable [IN externaldb]<br>
+ FROM oldtable<br>
+ WHERE condition;<br></p>
+    <h4>CASE</h4>
+    <p>Se relaciona muito com um IF/Else de uma línguagem, utilizado para tratamento de uma consulta. Utilizando "when" para uma condição, e para trazer o resultado, utilizamos then; <br>
+▪️ Sintaxe: <br>
+ SELECT *<br>
+ INTO newtable [IN externaldb]<br>
+ FROM oldtable<br>
+ WHERE condition;<br></p>
+  </div>
+  <div align="center"class="linha">__________________________________________________________________________________________________________</div>
+  <div calss='SQL DTBSE'></div>
+  <h4>Como criar um banco de dados ou exclui-lo?</h4>
+  <p>"CREATE DATABASE ..." & "DROP DATABASE ...", você exclue;<br>
+▪️ Sintaxe: <br> CREATE DATABASE databasename; & DROP DATABASE databasename;<br></p>
+   <h4>Como atualizar um banco de dados?</h4>
+  <p>"BACKUP DATABASE ...", Você atualiza o db, utilizando to disk e with.<br>
+▪️ Sintaxe: <br>
+ BACKUP DATABASE databasename<br>
+ TO DISK = 'filepath';</p>
+   <h4>Como criar uma tabela e exclui-la?</h4>
+  <p>"CREATE TABLE ..." E "DROP TABLE", Exclue;<br>
+▪️ Sintaxe: <br>
+ CREATE TABLE table_name (<br>
+    column1 datatype,<br>
+    column2 datatype,<br>
+    column3 datatype,<br>
+   ....
+ );</p>
+   <h4>Como alterar algo na tabela?</h4>
+  <p>"ALTER TABLE ..." Usado para criar, deletar e modificar colunas já existentes;<br>
+▪️ Sintaxe: <br>
+ ALTER TABLE table_name<br>
+ ADD column_name datatype;<br>
+</p>
+   <h4>Como especificar meus dados em uma tabela?</h4>
+  <p>'column1 datatype "CONSTRAINT"', usado para especificar caminhos dos dados em uma tabela.<br>
+▪️ Sintaxe: <br>
+ CREATE TABLE table_name (<br>
+    column1 datatype constraint,<br>
+    column2 datatype constraint,<br>
+    column3 datatype constraint,<br>
+    ....
+ );</p>
+   <h4>O que é NOT NULL?</h4>
+  <p>"NOT NULL", Ele trás que os valores null não serão aceitados para a tabela.<br>
+▪️ Sintaxe: <br>
+ CREATE TABLE Persons (<br>
+    ID int NOT NULL,<br>
+    LastName varchar(255) NOT NULL,<br>
+    FirstName varchar(255) NOT NULL,<br>
+    Age int
+ );</p>
+  <div align="center"class="linha">__________________________________________________________________________________________________________</div>
+  <div class='KEY'>
+    <h4>UNIQUE</h4>
+    <p>Garante que todos os valores de uma coluna seja diferente. Promovendo uma exclusividade para as colunas.<br>
+▪️ Sintaxe: <br>
+ CREATE TABLE Persons (<br>
+    ID int NOT NULL UNIQUE,<br>
+    LastName varchar(255) NOT NULL,<br>
+    FirstName varchar(255),<br>
+    Age int
+ );</p>
+    <h4>PRIMARY KEY(chave primária)</h4>
+    <p>A chave primaria E um indentificador unico da tabela. Sendo unico, mas nao nulo. Todo registro de tabela só deverar ter apenas uma chave primaria. <br>
+▪️ Sintaxe: <br>
+ CREATE TABLE Persons (<br>
+    ID int NOT NULL UNIQUE,<br>
+    LastName varchar(255) NOT NULL,<br>
+    FirstName varchar(255),<br>
+    Age int
+ );
+</p>
+    <h4>FOREIGN KEY(chave estrangeira)</h4>
+    <p>Foreign Key ou chave estrangeira, elas buscam as relações entre tabelas. Podendo ser um referência de uma tabela "x" para uma chave primaria da tabela "y", Podendo ser nula.<br>
+▪️ Sintaxe: <br>
+ CREATE TABLE Persons (<br>
+    ID int NOT NULL UNIQUE,<br>
+    LastName varchar(255) NOT NULL,<br>
+    FirstName varchar(255),<br>
+    Age int
+ );</p>
+    <h4>CHECK</h4>
+    <p>Usado para uma limitação de intervalos de valores dentro de uma tabela.<br>
+▪️ Sintaxe: <br>
+ CREATE TABLE Persons (<br>
+    ID int NOT NULL,<br>
+    LastName varchar(255) NOT NULL,<br>
+    FirstName varchar(255),<br>
+    Age int CHECK (Age>=18)<br>
+ );</p>
+  </div>
+  <div align center class='agradecimentos'>
+    <h4>Se você chegou até aqui, desde já te agradeço pela vizualização!😁 </h4>
+  </div>
 </div>
  
