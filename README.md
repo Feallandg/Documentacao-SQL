@@ -159,7 +159,7 @@ SELECT TOP 3 * FROM Customers;</p>
  SELECT column_name(s) FROM table2;
 </p>
     <h4>GROUP BY</h4>
-    <p>ele agrupa dados em linhas;<br>
+    <p>Ele agrupa dados em linhas;<br>
 ▪️ Sintaxe: <br>
  SELECT column_name(s)<br>
  FROM table_name<br>
@@ -167,7 +167,7 @@ SELECT TOP 3 * FROM Customers;</p>
  GROUP BY column_name(s)<br>
  ORDER BY column_name(s);</p>
     <h4>SELECT INTO</h4>
-    <p> seleciona dados de uma tabela para copiar, usando o IN para alocar em outro banco;<br>
+    <p> Seleciona dados de uma tabela para copiar, usando o IN para alocar em outro banco;<br>
 ▪️ Sintaxe: <br>
  SELECT *<br>
  INTO newtable [IN externaldb]<br>
